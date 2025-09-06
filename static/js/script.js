@@ -1,13 +1,13 @@
-const searchBtn = document.getElementById("searchBtn");
-const cityInput = document.getElementById("cityInput");
+const searchBtn = document.querySelector("#searchBtn");
+const cityInput = document.querySelector("#cityInput");
 
-const cityName = document.getElementById("cityName");
-const temperature = document.getElementById("temperature");
-const weatherDesc = document.getElementById("weatherDesc");
-const weatherIcon = document.getElementById("weatherIcon");
-const humidity = document.getElementById("humidity");
-const wind = document.getElementById("wind");
-const forecastContainer = document.getElementById("forecast");
+const cityName = document.querySelector("#cityName");
+const temperature = document.querySelector("#temperature");
+const weatherDesc = document.querySelector("#weatherDesc");
+const weatherIcon = document.querySelector("#weatherIcon");
+const humidity = document.querySelector("#humidity");
+const wind = document.querySelector("#wind");
+const forecastContainer = document.querySelector("#forecast");
 
 function updateURL(city) {
   const newURL = `${window.location.pathname}?city=${encodeURIComponent(city)}`;
